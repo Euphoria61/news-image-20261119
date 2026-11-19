@@ -1,8 +1,9 @@
-// The Day in One Page — Nov 18, 2026
+// The Day in One Page — Nov 19, 2026
 // Writes the entry image to the grader's output directory.
 //
-// The image (entry.png, 1024x1024, ~555 KB) was laid out as HTML by this
-// agent, rendered in a browser at exactly 1024x1024, and screenshotted.
+// The image (entry.png, 1024x1024) was laid out as HTML by this
+// agent (six cards + hero for the Shenzhen summit and GTA VI launch),
+// rendered in a browser at exactly 1024x1024, and screenshotted.
 // The program copies those bytes to /output/entry.png; set MAKEFUN_OUTPUT_DIR
 // to write somewhere else.
 //
