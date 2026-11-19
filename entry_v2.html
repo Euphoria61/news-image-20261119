@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1024px; height:1024px; background:#f6f1e2; font-family: Georgia, serif; }
+  .page { width:1024px; height:1024px; padding:10px 14px; display:flex; flex-direction:column; }
+  .top { display:flex; justify-content:space-between; align-items:center; }
+  .tags { font-size:10px; color:#666; letter-spacing:.5px; font-family:Arial, sans-serif; }
+  .date { font-size:40px; font-weight:900; color:#111; font-family:'Arial Black', Arial, sans-serif; letter-spacing:-.5px; }
+  .datebar { display:flex; align-items:center; gap:10px; border-bottom:3px solid #111; padding-bottom:4px; }
+  .datebar .flag { background:#b3261e; color:#fff; font-family:Arial, sans-serif; font-weight:bold; font-size:12px; padding:4px 8px; border-radius:3px; letter-spacing:.5px; }
+  .hero { display:flex; gap:10px; margin-top:8px; height:180px; }
+  .hero .big { flex:1.3; background:linear-gradient(135deg,#8fb8e8,#4a7ab5); border-radius:8px; padding:12px 14px; color:#fff; position:relative; }
+  .hero .big h2 { font-size:23px; line-height:1.15; text-shadow:0 1px 2px rgba(0,0,0,.3); }
+  .hero .big p { font-size:12.5px; margin-top:6px; line-height:1.3; font-family:Arial, sans-serif; }
+  .hero .big .num { font-size:34px; font-weight:900; margin-top:6px; font-family:Arial, sans-serif; }
+  .hero .m1 { flex:1; background:linear-gradient(135deg,#e8a25f,#c96a1e); border-radius:8px; padding:12px 14px; color:#fff; }
+  .hero .m1 h2 { font-size:19px; line-height:1.15; text-shadow:0 1px 2px rgba(0,0,0,.3); }
+  .hero .m1 p { font-size:12px; margin-top:5px; line-height:1.3; font-family:Arial, sans-serif; }
+  .hero .m2 { flex:1; background:linear-gradient(135deg,#67b06a,#2e7d32); border-radius:8px; padding:12px 14px; color:#fff; }
+  .hero .m2 h2 { font-size:19px; line-height:1.15; text-shadow:0 1px 2px rgba(0,0,0,.3); }
+  .hero .m2 p { font-size:12px; margin-top:5px; line-height:1.3; font-family:Arial, sans-serif; }
+  .strip { display:flex; gap:8px; margin-top:8px; }
+  .stat { flex:1; background:#fffdf6; border:1.5px solid #2a2a2a; border-radius:6px; text-align:center; padding:6px 4px; }
+  .stat .v { font-size:22px; font-weight:900; color:#111; font-family:Arial, sans-serif; }
+  .stat .l { font-size:10.5px; color:#444; font-family:Arial, sans-serif; margin-top:1px; line-height:1.2; }
+  .lower { display:flex; gap:10px; margin-top:8px; flex:1; }
+  .mapcol { flex:1.15; background:#fffdf6; border:1.5px solid #2a2a2a; border-radius:6px; padding:6px 8px; display:flex; flex-direction:column; }
+  .mapcol h4 { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#8b0000; border-bottom:1px solid #999; padding-bottom:3px; margin-bottom:4px; font-family:Arial, sans-serif; }
+  .numrow { display:flex; align-items:center; gap:8px; border-bottom:1px dotted #bbb; padding:6px 0; }
+  .nv { font-size:15.5px; font-weight:900; color:#111; font-family:Arial, sans-serif; white-space:nowrap; min-width:105px; }
+  .nl { font-size:10.8px; color:#333; line-height:1.25; font-family:Arial, sans-serif; }
+  .listcol { flex:1; background:#fffdf6; border:1.5px solid #2a2a2a; border-radius:6px; padding:6px 10px; display:flex; flex-direction:column; }
+  .listcol h4 { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#1d4e89; border-bottom:1px solid #999; padding-bottom:3px; margin-bottom:4px; font-family:Arial, sans-serif; }
+  .listcol ul { list-style:none; flex:1; display:flex; flex-direction:column; justify-content:space-evenly; }
+  .listcol li { font-size:11.3px; color:#222; line-height:1.22; border-bottom:1px dotted #bbb; padding:2px 0; font-family:Arial, sans-serif; }
+  .listcol li b { color:#8b0000; }
+  .footer { border-top:2px solid #111; margin-top:6px; padding-top:3px; font-size:9.5px; color:#555; display:flex; justify-content:space-between; font-family:Arial, sans-serif; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <div class="tags">THE WORLD IN ONE IMAGE · 6 CONTINENTS · 14 ZONES</div>
+    <div class="tags">AI-GENERATED DIGEST · NOVEMBER 19, 2026</div>
+  </div>
+  <div class="datebar">
+    <span class="flag">TODAY</span>
+    <div class="date">Thursday, 19 November 2026</div>
+  </div>
+  <div class="hero">
+    <div class="big">
+      <h2>Trump, Xi, Putin Hold Historic 3-Way Summit in Shenzhen</h2>
+      <p>First-ever trilateral of the three nuclear giants, 1 hour at APEC; Trump pushes arms control, Kyiv and Europe fear being carved out.</p>
+      <div class="num">APEC 2026</div>
+    </div>
+    <div class="m1">
+      <h2>Iran Widens Gulf War: US Base in Kuwait Hit</h2>
+      <p>Strikes on Kuwait, Bahrain and Hormuz shipping; Mossad urged joint US–Israel strikes on Iran, Reuters reports.</p>
+    </div>
+    <div class="m2">
+      <h2>Anthropic's ANT Debuts on Nasdaq in Record IPO</h2>
+      <p>Priced $83, up to ~$1.4T valuation; Nvidia doubles revenue to $115.8bn under interim CEO Kress.</p>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="stat"><div class="v">3×</div><div class="l"> Kerch bridge attacks this week; 3rd today</div></div>
+    <div class="stat"><div class="v">103.82</div><div class="l">Dollar index, 19-month high</div></div>
+    <div class="stat"><div class="v">$83</div><div class="l">Anthropic IPO price</div></div>
+    <div class="stat"><div class="v">€45bn</div><div class="l">EU loan proposed for Ukraine</div></div>
+    <div class="stat"><div class="v">6</div><div class="l">US outages this week, not linked</div></div>
+  </div>
+  <div class="lower">
+    <div class="mapcol">
+      <h4>The day in numbers</h4>
+      <div class="numrow"><span class="nv">$115.8bn</span><span class="nl">Nvidia quarterly revenue, +103% YoY, first report since Jensen Huang's Nov 12 ouster; raised FY growth forecast to 75%</span></div>
+      <div class="numrow"><span class="nv">$83</span><span class="nl">Anthropic IPO priced above its $70–78 range; ANT trades from today, up to ~$1.4T valuation, largest IPO in history</span></div>
+      <div class="numrow"><span class="nv">€45bn</span><span class="nl">EU loan proposed for Ukraine's cash crisis and defences; envoys Witkoff and Kushner meet officials in Berlin</span></div>
+      <div class="numrow"><span class="nv">103.82</span><span class="nl">Dollar index at a fresh 19-month high; December Fed hike fully priced, Waller urges "aggressive action"</span></div>
+      <div class="numrow"><span class="nv">Rs322</span><span class="nl">Pakistan petrol price per litre from Nov 19 (−Rs3); SBP urges export-led growth</span></div>
+      <div class="numrow"><span class="nv">~30 min</span><span class="nl">Takaichi–Putin talk at APEC, first Japan–Russia leaders' meeting since the 2022 invasion</span></div>
+      <div class="numrow"><span class="nv">3×</span><span class="nl">Kerch bridge attacks this week — again today, traffic suspended, damage assessed</span></div>
+    </div>
+    <div class="listcol">
+      <h4>Also on Thursday, November 19</h4>
+      <ul>
+        <li><b>UKRAINE:</b> Kyiv says it hit 2 Russian oil refineries; Kerch bridge hit again, traffic suspended</li>
+        <li><b>EUROPE:</b> EU proposes €45bn loan to avert Kyiv cash crisis; envoys Witkoff and Kushner meet officials in Berlin</li>
+        <li><b>US:</b> Microsoft, FAA, NSA Net, Chase outages "unrelated, no hostile actor," officials say</li>
+        <li><b>MARKETS:</b> Dollar at 103.82, 19-month high, as Fed's December hike fully priced; Waller urges "aggressive action"</li>
+        <li><b>ISRAEL-IRAN:</b> Mossad chief Gofman pressed for joint US–Israel strikes in Washington talks</li>
+        <li><b>JAPAN:</b> PM Takaichi meets Putin ~30 min, first leaders' meeting since 2022 invasion</li>
+        <li><b>KOREA:</b> Seoul sees "no sign" of imminent US–North Korea talks; Korea–China services deal "some progress"</li>
+        <li><b>MOLDOVA:</b> President Sandu says Russian drone flew over Chisinau; pledges more sanctions</li>
+        <li><b>PAKISTAN:</b> Petrol cut Rs3 to Rs322/litre from Nov 19; SBP urges export-led growth</li>
+        <li><b>ASIA:</b> India draws record $9.6bn foreign inflow in November; China AI stocks drop on US chip curbs</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Sources: Reuters · Guardian · WSJ · Bloomberg · Nikkei · AP · Kyiv Independent · Yonhap</span>
+    <span>Entry: news-image-20261119 · Nov 19, 2026</span>
+  </div>
+</div>
+</body>
+</html>
