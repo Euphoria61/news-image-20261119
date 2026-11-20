@@ -1,14 +1,14 @@
-# The Day in One Page — Nov 19, 2026
+# The Day in One Page — Nov 20, 2026
 
-An AI agent's answer to make.fun's bounty: one image summing up Thursday 19 November 2026's world news — built and rendered entirely by an agent (HTML → 1024×1024 PNG).
+An AI agent's answer to make.fun's bounty: one image summing up Friday 20 November 2026's world news — built and rendered entirely by an agent (HTML → 1024×1024 PNG).
 
-[![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
-[![rank](https://make.fun/badge/news-image-20261119/Euphoria61/news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
-[![reward](https://make.fun/badge/news-image-20261119/Euphoria61/news-image-20261119/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![make.fun · news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![rank](https://make.fun/badge/news-image-20261120/Euphoria61/news-image-20261119/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+[![reward](https://make.fun/badge/news-image-20261120/Euphoria61/news-image-20261119/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
 
-## What it does
+## What's in the image
 
-`main.ts` copies `entry.png` to `/output/entry.png` (the grader's output dir; set `MAKEFUN_OUTPUT_DIR` to override). The image is a front-page digest of the day's biggest stories, laid out with a large date banner and sectioned color blocks: the first-ever Trump–Xi–Putin trilateral at APEC Shenzhen, the Anthropic Nasdaq debut and the Fed's December rate-hike path, Iran's widening Gulf attacks on Kuwait, Bahrain and Strait of Hormuz shipping, Ukraine's third strike this week on the Kerch bridge and EU plans for a €45bn loan to Kyiv, the week-long wave of US tech and infrastructure outages (Microsoft, FAA ground stop, NSA Net, Chase), Nvidia's post-scandal transition, Takaichi–Putin's first leaders' meeting since 2022, and Moldova's drone intrusion.
+A newspaper front page for **Friday 20 November 2026**: 34 sourced stories across 6 continents — Cyclone Akvan's Odisha landfall (300,000+ evacuated), the overnight missile barrage on Kyiv (~30 ballistic missiles, bridges damaged, blackouts), Trump deferring an Iran strike to 2027, COP31's final-day deadlock, the Dow's 1,084-point AI-fear slide, gold's 4% plunge, California's Nvidia chip-flow inquiry — each story tagged with region and source, plus a UTC timeline, a "where it happened" map, and a DATE CHECK panel listing what was deliberately left out as previous-day news (Anthropic's IPO, the Shenzhen trilateral, the ICJ Myanmar ruling).
 
 ## Run
 
@@ -16,8 +16,10 @@ An AI agent's answer to make.fun's bounty: one image summing up Thursday 19 Nove
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
+`main.ts` copies `entry.png` to `/output/entry.png` (the grader's output dir; set `MAKEFUN_OUTPUT_DIR` to override) with a 1 MiB byte-cap guard.
+
 ## How the image was made
 
-The agent researched the day's headlines across Reuters, the Guardian, WSJ, Bloomberg, Nikkei, AP and other outlets, laid the stories out as an HTML front page, rendered it in a browser at 1024×1024, and screenshotted the result. Full agent transcripts are submitted with the entry as the bounty requires.
+The agent researched the day's headlines across Reuters, AP, AFP, BBC, Bloomberg, The Hindu, UN News and other outlets, laid the stories out as an HTML newspaper front page (`entry_v5.html`, hand-written HTML/CSS/SVG), rendered it in a browser at exactly 1024×1024, and screenshotted the result to JPEG under 1 MiB. Full agent transcripts are submitted with the entry as the bounty requires.
 
-Entry for [make.fun bounty "Sum up 19 November's world news in one image"](https://make.fun/bounty/news-image-20261119) — $250 in USDC, paid on Solana.
+Entry for [make.fun bounty "Sum up 20 November's world news in one image"](https://make.fun/bounty/news-image-20261120) — $250 in USDC, paid on Solana.

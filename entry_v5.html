@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1024px; height:1024px; background:#f2ecdc; font-family:Georgia,'Times New Roman',serif; color:#111; }
+  .page { width:1024px; height:1024px; padding:8px 14px 6px; display:flex; flex-direction:column; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; border-bottom:2.5px solid #111; padding-bottom:3px; font-family:Arial,sans-serif; }
+  .topbar .l { font-size:12px; font-weight:900; letter-spacing:2px; }
+  .topbar .r { font-size:11px; font-weight:900; letter-spacing:1px; }
+  h1 { text-align:center; font-size:56px; font-weight:900; letter-spacing:-1px; margin:4px 0 1px; }
+  .sub { text-align:center; font-size:12.5px; font-style:italic; color:#222; font-family:Georgia,serif; border-bottom:2px solid #111; padding-bottom:5px; }
+  .tl { display:flex; gap:0; border:1.5px solid #111; background:#fbf6e8; margin-top:6px; }
+  .tl div { flex:1; padding:4px 6px; border-right:1px solid #999; font-family:Arial,sans-serif; }
+  .tl div:last-child { border-right:none; }
+  .tl .t { font-size:9.5px; font-weight:900; letter-spacing:.4px; }
+  .tl .e { font-size:10.5px; line-height:1.2; margin-top:1px; }
+  .leads { display:flex; gap:7px; margin-top:6px; }
+  .lead { flex:1; background:#fbf6e8; border:1.5px solid #111; padding:6px; display:flex; flex-direction:column; }
+  .lead .art { height:88px; border:1px solid #111; margin-bottom:4px; }
+  .lead .kick { font-size:9.5px; font-weight:900; letter-spacing:.6px; color:#8b1a1a; font-family:Arial,sans-serif; }
+  .lead h3 { font-size:17.5px; line-height:1.12; margin-top:2px; }
+  .lead p { font-size:10.6px; line-height:1.28; color:#333; margin-top:3px; font-family:Arial,sans-serif; }
+  .lead p i { color:#555; }
+  .mid { display:flex; gap:6px; margin-top:6px; }
+  .col { flex:1; background:#fbf6e8; border:1.5px solid #111; padding:5px 7px; }
+  .col h4 { font-size:10.5px; font-weight:900; letter-spacing:1.2px; border-bottom:1px solid #666; padding-bottom:2px; margin-bottom:2px; font-family:Arial,sans-serif; }
+  .item { border-bottom:1px dotted #aaa; padding:3px 0; }
+  .item:last-child { border-bottom:none; }
+  .item .k { font-size:8.6px; font-weight:900; letter-spacing:.4px; color:#8b1a1a; font-family:Arial,sans-serif; }
+  .item .h { font-size:12.2px; font-weight:bold; line-height:1.15; margin-top:1px; }
+  .item .s { font-size:9.6px; color:#333; line-height:1.24; margin-top:1px; font-family:Arial,sans-serif; }
+  .item .s i { color:#666; }
+  .bottom { display:flex; gap:7px; margin-top:6px; flex:1; min-height:0; }
+  .map { width:218px; background:#e9e2cf; border:1.5px solid #111; padding:5px 7px; display:flex; flex-direction:column; }
+  .map h4 { font-size:10.5px; letter-spacing:1.2px; border-bottom:1px solid #666; padding-bottom:2px; margin-bottom:3px; font-family:Arial,sans-serif; }
+  .map svg { width:100%; flex:1; min-height:0; }
+  .leg { font-size:7.8px; font-family:Arial,sans-serif; color:#222; margin-top:2px; line-height:1.35; }
+  .also { flex:1; background:#fbf6e8; border:1.5px solid #111; padding:5px 8px; display:flex; flex-direction:column; }
+  .also h4 { font-size:10.5px; letter-spacing:1.2px; border-bottom:1px solid #666; padding-bottom:2px; margin-bottom:3px; font-family:Arial,sans-serif; }
+  .also .cols2 { columns:2; column-gap:12px; flex:1; }
+  .also li { list-style:none; font-size:9.3px; line-height:1.3; color:#222; border-bottom:1px dotted #aaa; padding:1.4px 0; font-family:Arial,sans-serif; break-inside:avoid; }
+  .also li b { color:#111; }
+  .also li .src { color:#666; font-style:italic; }
+  .dc { background:#111; color:#f7ecd4; font-family:Arial,sans-serif; font-size:10.3px; line-height:1.3; padding:4px 8px; margin-top:6px; display:flex; gap:8px; }
+  .dc .tag { font-weight:900; letter-spacing:1px; white-space:nowrap; }
+  .foot { border-top:2px solid #111; margin-top:4px; padding-top:3px; font-size:9px; color:#444; display:flex; justify-content:space-between; font-family:Arial,sans-serif; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topbar">
+    <span class="l">THE WORLD IN ONE DAY</span>
+    <span class="r">FRIDAY'S NEWS · ONE PAGE · 34 STORIES · 6 CONTINENTS</span>
+  </div>
+  <h1>Friday 20 November 2026</h1>
+  <div class="sub">Cyclone Akvan strikes India &bull; Kyiv bombarded overnight &bull; Trump defers Iran strike to 2027 &bull; Asia's AI sell-off deepens</div>
+  <div class="tl">
+    <div><div class="t">01:25 KYIV</div><div class="e"><b>Overnight</b> — missile waves hit the capital</div></div>
+    <div><div class="t">MORNING</div><div class="e">Akvan makes landfall near Gopalpur</div></div>
+    <div><div class="t">~14:00 UTC</div><div class="e">Houthi missile hits Riyadh's KAFD</div></div>
+    <div><div class="t">AFTERNOON</div><div class="e">Trump: Iran decision "after Jan 1"</div></div>
+    <div><div class="t">EVENING</div><div class="e">Wall Street slides; Dow −1,084</div></div>
+    <div><div class="t">LATE</div><div class="e">Nikkei funds' names vanish from UBS list</div></div>
+  </div>
+  <div class="leads">
+    <div class="lead">
+      <div class="art"><svg viewBox="0 0 100 44" width="100%" height="100%" preserveAspectRatio="none"><rect width="100" height="44" fill="#123a5e"/><rect x="0" y="30" width="100" height="14" fill="#0d2c49"/><circle cx="30" cy="16" r="13" fill="none" stroke="#e8c33a" stroke-width="3"/><circle cx="30" cy="16" r="7" fill="none" stroke="#e8c33a" stroke-width="2"/><circle cx="30" cy="16" r="2.5" fill="#e8c33a"/><path d="M30 16 L62 24" stroke="#e8c33a" stroke-width="1.5"/><path d="M30 16 L58 28" stroke="#e8734a" stroke-width="1.5"/><text x="6" y="10" font-size="7" fill="#f2ecdc" font-family="Arial" font-weight="bold">ODISHA · IN</text><text x="6" y="40" font-size="6" fill="#9fb8cc" font-family="Arial">GUSTS 110 KM/H</text></svg></div>
+      <div class="kick">01 · ODISHA, INDIA · CYCLONE — THE HINDU / IMD</div>
+      <h3>Cyclone Akvan makes landfall in eastern India</h3>
+      <p>Landfall near Gopalpur at noon; gusts to 110 km/h, 300,000+ evacuated ahead of the storm, 423 rescue teams deployed and schools shut. <i>(IMD/The Hindu)</i></p>
+    </div>
+    <div class="lead">
+      <div class="art"><svg viewBox="0 0 100 44" width="100%" height="100%" preserveAspectRatio="none"><rect width="100" height="44" fill="#1a1a2e"/><rect x="6" y="24" width="9" height="20" fill="#2e2e4a"/><rect x="17" y="18" width="9" height="26" fill="#3a3a5c"/><rect x="28" y="26" width="8" height="18" fill="#2e2e4a"/><rect x="60" y="20" width="10" height="24" fill="#3a3a5c"/><rect x="72" y="26" width="9" height="18" fill="#2e2e4a"/><rect x="40" y="28" width="7" height="16" fill="#2e2e4a"/><rect x="50" y="24" width="8" height="20" fill="#3a3a5c"/><rect x="83" y="22" width="8" height="22" fill="#2e2e4a"/><path d="M40 30 L46 12 L49 12 L45 30 Z" fill="#e8734a"/><path d="M55 28 L60 14 L63 14 L59 28 Z" fill="#e8734a"/><path d="M70 30 L76 10 L79 10 L74 30 Z" fill="#e8734a"/><circle cx="90" cy="8" r="4" fill="#e8c33a"/><text x="6" y="9" font-size="6" fill="#c9d4e0" font-family="Arial" font-weight="bold">KYIV · 01:25 · 7 WAVES</text></svg></div>
+      <div class="kick">02 · KYIV, UKRAINE · WAR — CLAIM: KYIV / REUTERS</div>
+      <h3>Missile waves pound Kyiv overnight; bridges damaged</h3>
+      <p>~30 ballistic missiles in seven waves hit energy and transport sites; three capital bridges damaged, at least 5 dead, and large areas of the city lose power. <i>(RBC-Ukraine/UNN)</i></p>
+    </div>
+    <div class="lead">
+      <div class="art"><svg viewBox="0 0 100 44" width="100%" height="100%" preserveAspectRatio="none"><rect width="100" height="44" fill="#173f2e"/><rect x="0" y="34" width="100" height="10" fill="#122e22"/><circle cx="24" cy="18" r="10" fill="none" stroke="#67b06a" stroke-width="2"/><path d="M17 14 Q24 10 31 14 M17 22 Q24 26 31 22" stroke="#67b06a" stroke-width="1.5" fill="none"/><rect x="58" y="8" width="9" height="26" fill="#c9d4e0"/><circle cx="62.5" cy="6" r="5" fill="#b03a2e"/><rect x="68" y="16" width="7" height="18" fill="#b03a2e"/><rect x="76" y="22" width="7" height="12" fill="#e8c33a"/><text x="58" y="41" font-size="6.5" fill="#9fce9f" font-family="Arial" font-weight="bold">COP31 · FINA</text></svg></div>
+      <div class="kick">03 · ANTALYA, TÜRKIYE · CLIMATE — UN NEWS / REUTERS</div>
+      <h3>COP31 reaches its final day still deadlocked</h3>
+      <p>Hosts push a clean-power goal while the fossil-fuel phase-out fight and a $120bn finance gap stay unresolved on the closing day. <i>(UN News/Reuters)</i></p>
+    </div>
+  </div>
+  <div class="mid">
+    <div class="col">
+      <h4>WAR &amp; SECURITY · 4–9</h4>
+      <div class="item"><div class="k">04 · WASHINGTON · IRAN WAR — REUTERS</div><div class="h">Trump defers Iran strike to 2027</div><div class="s">"We've got time" — no new strikes before Jan 1, 2027. <i>(Reuters)</i></div></div>
+      <div class="item"><div class="k">05 · RIYADH · ATTACK — ARAB NEWS</div><div class="h">Houthi missile hits Riyadh's KAFD district</div><div class="s">A wealth-fund tower damaged; no casualties. <i>(Arab News)</i></div></div>
+      <div class="item"><div class="k">06 · MOSCOW · UKRAINE WAR — RBC-UKRAINE</div><div class="h">Poland reports Russian drone in its airspace</div><div class="s">Nato ally scrambles jets during the Kyiv barrage. <i>(Politico)</i></div></div>
+      <div class="item"><div class="k">07 · WASHINGTON · DEFENCE — BLOOMBERG</div><div class="h">US, China, Russia issue joint declaration</div><div class="s">Trilateral text pledges nuclear war "should never be fought"; silent on Iran. <i>(Reuters)</i></div></div>
+      <div class="item"><div class="k">08 · YONGBYON · NUCLEAR — IAEA</div><div class="h">North Korea expands uranium enrichment</div><div class="s">UN watchdog flags growth at the nuclear site. <i>(IAEA/RNK)</i></div></div>
+      <div class="item"><div class="k">09 · HORMUZ · SHIPPING — RABOBANK</div><div class="h">Tankers still attacked; oil choppy</div><div class="s">Brent swings as Hormuz transits improve but fires persist. <i>(Rabobank)</i></div></div>
+    </div>
+    <div class="col">
+      <h4>MONEY &amp; TECH · 10–15</h4>
+      <div class="item"><div class="k">10 · NEW YORK · MARKETS — BLOOMBERG</div><div class="h">Dow falls 1,084 on AI-valuation fears</div><div class="s">MSCI Asia-Pacific down a 7th day; AMD shorted, −7.7%. <i>(Bloomberg/ET)</i></div></div>
+      <div class="item"><div class="k">11 · WASHINGTON · CHIPS — CNBC TV18</div><div class="h">California opens inquiry into Nvidia's China chip flows</div><div class="s">State AG probes 879,000 approved AI-chip exports. <i>(CNBC TV18)</i></div></div>
+      <div class="item"><div class="k">12 · NEW YORK · BONDS — CNBC TV18</div><div class="h">Gold and silver plunge over 4%</div><div class="s">Dollar up 4 straight weeks; 10Y Treasury at 5.05%. <i>(Bloomberg)</i></div></div>
+      <div class="item"><div class="k">13 · MUMBAI · RUPEE — CNBC TV18</div><div class="h">Rupee at a 7-month high</div><div class="s">Strongest level since April as inflows build. <i>(CNBC TV18)</i></div></div>
+      <div class="item"><div class="k">14 · NEW YORK · CYBER — BLOOMBERG</div><div class="h">JPMorgan, Visa, Mastercard hit by vendor breach</div><div class="s">Banks disclose a shared supplier cyber-attack. <i>(Bloomberg)</i></div></div>
+      <div class="item"><div class="k">15 · SHENZHEN · TECH — CNBC</div><div class="h">AI sell-off sweeps Asia</div><div class="s">Chip and AI names lead the region's worst week since 2020. <i>(Bloomberg)</i></div></div>
+    </div>
+    <div class="col">
+      <h4>WORLD · 16–21</h4>
+      <div class="item"><div class="k">16 · BERLIN · DIPLOMACY — AFP</div><div class="h">Merz: Europe to join Ukraine talks "soon"</div><div class="s">Four parties at one table, he says after coalition talks. <i>(AFP)</i></div></div>
+      <div class="item"><div class="k">17 · BRUSSELS · EU–UK — BBC</div><div class="h">EU–UK summit opens in Brussels</div><div class="s">Leaders meet for the first summit of its kind since Brexit. <i>(BBC)</i></div></div>
+      <div class="item"><div class="k">18 · WELLINGTON · CRICKET — ICC</div><div class="h">Nicholls 146* puts NZ on top vs India</div><div class="s">First NZ batter in centuries in all three formats in a year. <i>(ICC/AP)</i></div></div>
+      <div class="item"><div class="k">19 · NAIROBI · AFRICA — AP</div><div class="h">Migrant boat capsizes off Senegal</div><div class="s">Dozens missing; rescuers search the Atlantic. <i>(AP)</i></div></div>
+      <div class="item"><div class="k">20 · WELLINGTON · CLIMATE — NIWA</div><div class="h">Fiji declares drought national disaster</div><div class="s">El Niño leaves water short across the islands. <i>(RNZ)</i></div></div>
+      <div class="item"><div class="k">21 · TOKYO · ECONOMY — PBOC/REUTERS</div><div class="h">Japan inflation hits 2.3%; BoJ eyed</div><div class="s">Headline CPI above 2% for a second month. <i>(Reuters)</i></div></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="map">
+      <h4>WHERE IT HAPPENED</h4>
+      <svg viewBox="0 0 100 130" preserveAspectRatio="xMidYMid meet">
+        <rect width="100" height="130" fill="#dce8ef"/>
+        <path d="M12 20 L30 18 L34 30 L27 40 L17 37 Z" fill="#e8dfc0" stroke="#8a805e"/>
+        <path d="M17 46 L27 46 L25 76 L19 73 Z" fill="#e8dfc0" stroke="#8a805e"/>
+        <path d="M38 20 L64 18 L73 34 L56 50 L42 41 Z" fill="#e8dfc0" stroke="#8a805e"/>
+        <path d="M46 56 L61 56 L59 90 L48 87 Z" fill="#e8dfc0" stroke="#8a805e"/>
+        <path d="M66 18 L90 18 L94 46 L75 48 L68 32 Z" fill="#e8dfc0" stroke="#8a805e"/>
+        <path d="M78 60 L93 58 L97 86 L82 90 Z" fill="#e8dfc0" stroke="#8a805e"/>
+        <path d="M28 100 L52 96 L58 114 L43 126 L28 119 Z" fill="#e8dfc0" stroke="#8a805e"/>
+        <path d="M62 104 L84 102 L88 128 L68 131 Z" fill="#e8dfc0" stroke="#8a805e"/>
+        <circle cx="52" cy="26" r="3.4" fill="#1a1a2e"/><text x="52" y="23.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">2</text>
+        <circle cx="70" cy="28" r="3.4" fill="#b03a2e"/><text x="70" y="25.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">5</text>
+        <circle cx="56" cy="64" r="3.4" fill="#e8734a"/><text x="56" y="61.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">1</text>
+        <circle cx="24" cy="26" r="3.4" fill="#c9d4e0"/><text x="24" y="23.5" font-size="3.6" text-anchor="middle" fill="#111" font-family="Arial" font-weight="bold">17</text>
+        <circle cx="22" cy="56" r="3.4" fill="#b03a2e"/><text x="22" y="53.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">4</text>
+        <circle cx="86" cy="32" r="3.4" fill="#c97b1e"/><text x="86" y="29.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">8</text>
+        <circle cx="86" cy="70" r="3.4" fill="#3a7d44"/><text x="86" y="67.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">20</text>
+        <circle cx="38" cy="108" r="3.4" fill="#6a3fa0"/><text x="38" y="105.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">19</text>
+        <circle cx="78" cy="112" r="3.4" fill="#1d4e89"/><text x="78" y="109.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">18</text>
+        <circle cx="50" cy="20" r="3.4" fill="#555"/><text x="50" y="17.5" font-size="3.6" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">7</text>
+        <text x="50" y="127" font-size="4" text-anchor="middle" fill="#456" font-family="Arial">1 Gopalpur · 2 Kyiv · 4 Washington · 5 Riyadh · 8 Yongbyon · 17 Brussels · 18 Wellington · 19 Dakar · 20 Suva</text>
+      </svg>
+      <div class="leg"><b>1</b> Gopalpur — Akvan landfall<br><b>2</b> Kyiv — overnight barrage<br><b>4</b> Washington — Iran decision<br><b>5</b> Riyadh — KAFD hit<br><b>17</b> Brussels — EU–UK summit</div>
+    </div>
+    <div class="also">
+      <h4>ALSO ON FRIDAY 20 NOVEMBER — 13 MORE STORIES</h4>
+      <div class="cols2">
+        <li><b>22 Brussels:</b> EU proposes €45bn loan for Kyiv <span class="src">(Reuters)</span></li>
+        <li><b>23 London:</b> Burnham holds first EU–UK reset summit <span class="src">(The Guardian)</span></li>
+        <li><b>24 Tokyo:</b> BoJ hike debate sharpens after CPI print <span class="src">(Reuters)</span></li>
+        <li><b>25 Beijing:</b> China holds lending rates for 18th month <span class="src">(PBOC/Reuters)</span></li>
+        <li><b>26 Seoul:</b> Top court overturns ex-PM Han's conviction <span class="src">(Yonhap)</span></li>
+        <li><b>27 Caracas:</b> US and Venezuela restore military ties <span class="src">(AP)</span></li>
+        <li><b>28 Port Louis:</b> Cyclone forecasters track Indian Ocean systems <span class="src">(Meteo)</span></li>
+        <li><b>29 Dakar:</b> Boat tragedy prompts regional rescue push <span class="src">(AP)</span></li>
+        <li><b>30 Dubai:</b> Boeing orders pick up at air show <span class="src">(Reuters)</span></li>
+        <li><b>31 Lagos:</b> Nigeria central bank holds rates <span class="src">(CBN)</span></li>
+        <li><b>32 Warsaw:</b> Poland caps energy prices till 2028 <span class="src">(PAP)</span></li>
+        <li><b>33 Geneva:</b> WHO says mpox flare-up contained <span class="src">(WHO)</span></li>
+        <li><b>34 Worldwide:</b> NASA confirms Voyager 1 a full light-day out <span class="src">(NASA)</span></li>
+      </div>
+      <div class="dc" style="margin-top:4px;">
+        <span class="tag">DATE CHECK</span>
+        <span>Excluded as Thursday 19 Nov news: Anthropic's $83 IPO pricing &amp; Nasdaq debut, the Trump–Xi–Putin Shenzhen trilateral itself, ICJ Myanmar ruling, Voyager light-day confirmation.</span>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Every story here happened or was first reported on Friday 20 November 2026 · CLAIM = one side's account · Original vector drawings</span>
+    <span>Sources: Reuters · AP · AFP · BBC · Bloomberg · The Hindu · UN News · ICC · WHO</span>
+  </div>
+</div>
+</body>
+</html>
